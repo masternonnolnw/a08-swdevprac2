@@ -19,7 +19,14 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ vdoSrc, isPlaying }) => {
   }, [isPlaying]);
 
   return (
-    <video ref={videoRef} width="400" controls className="rounded-md">
+    <video
+      ref={videoRef}
+      width="400"
+      controls
+      className="rounded-md"
+      autoPlay
+      muted
+    >
       <source src={vdoSrc} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
