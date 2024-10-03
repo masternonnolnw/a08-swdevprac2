@@ -6,7 +6,7 @@ import useWindowListener from "../hooks/useWindowListener";
 
 const PromoteCard: React.FC = () => {
   const vdoSrc = "/vdo/getvaccine.mp4";
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlayPause = () => {
     setIsPlaying((prev) => !prev);
